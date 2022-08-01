@@ -3,6 +3,7 @@ import React, { useState } from "react";
 // import {HiOutlineMenuAlt4} from 'react-icons/hi'
 // import {FaRegTimesCircle} from 'react-icons/fa'
 import foto from "../../img/Vector.svg";
+import busqueda from "../../img/bx-search-alt.svg";
 
 export const Header = () => {
   const [click, setClick] = useState(false);
@@ -13,17 +14,16 @@ export const Header = () => {
       <div className="container">
         <div className="hamburger" onClick={handleClick}>
           {click ? (
-            <img src={foto} alt="foto__menu" className="ico" />
+            <img src={foto} alt="foto__menu" className="icon" />
           ) : (
-            <img src={foto} alt="foto__menu" className="ico" />
+            <img src={foto} alt="foto__menu" className="icon" />
           )}
         </div>
-        <h1>Estate</h1>
-        <button className="btn">Sign In</button>
-        <ul className={click ? "nav-menu active" : "nav-menu"}>
-          <li>
-            <a href="#">Search</a>
-          </li>
+        <dir><img src={foto} alt="" /></dir>
+        <ul className={click ? "nav__menu active" : "nav__menu"}>
+         
+            <a href="#"><img src={busqueda} alt="b" /></a>
+          
         </ul>
       </div>
     </div>
