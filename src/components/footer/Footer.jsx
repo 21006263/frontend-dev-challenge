@@ -11,10 +11,10 @@ export const Footer = () => {
       
            
             <div className='container__main'>
-                <div className='col'>
+                <div className='p1'>
                 <img src={logo} alt=""  className=''/>
                 </div>
-                <div className='col'>
+                <div className='p1'>
                 <p className=''>La Mente es Maravillosa is a property of Grupo MContigo© 2012 – 2020. All rights reserved.
                    Los contenidos de esta publicación se redactan solo con fines informativos. En ningún momento pueden servir para facilitar diagnósticos o sustituir la labor de un profesional. Le recomendamos que contacte con su especialista de confianza.</p>
                    
@@ -23,13 +23,13 @@ export const Footer = () => {
             </div>
 
             <div className='social'>
-              <img src={Separator} alt="" />
+              <img src={Separator} alt=""  className='largo'/>
           
           </div>
 
-<br />
+               <br />
 
-            <div className='container__politicas'>
+            <div className='container__main'>
                 <div className='col'>
                     <p>Política de Cookies</p>
                 </div>
