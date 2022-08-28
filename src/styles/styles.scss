@@ -2,9 +2,27 @@
 @import './base/base';
 
 
+//? main  
+@import './app/app';
+
 //* Components *//
+
+//* Pages *//
+/*cards*/
+@import './components/pages/cards/card';
+@import './components/pages/cards/cards';
+
+
+/*aside*/
+
+
+
+
+//* Components *//
+
 
 @import './components/footer';
 @import './components/header';
 @import './components/home';
+@import './components/hero-img';
 

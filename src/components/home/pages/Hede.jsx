@@ -1,24 +1,22 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
-// import {HiOutlineMenuAlt4} from 'react-icons/hi'
-// import {FaRegTimesCircle} from 'react-icons/fa'
-//import foto from "../../img/Vector.svg";
-//import busqueda from "../../img/bx-search-alt.svg";
-import logo from "../../img/logo.png";
+import React, { useState } from "react";
+// import { HeaderWrapper } from "./styles/Header";
+import Navbar from "./Nar";
+import MenuButton from "./MenuButton";
+import logo from "../../../img/logo.png";
 
-export const Header = () => {
-  //const [click, setClick] = useState(false);
-  // const handleClick = () => setClick(!click);
+function Header() {
+  const [open, setOpen] = useState(false);
+
+  const handleClick = () => {
+    setOpen(!open);
+  };
 
   return (
-    <header className="navbar">
-      <div className="navbar__hijo svgHamburguesa">
-
-      <svg width="38" height="24" viewBox="0 0 38 24"  xmlns="http://www.w3.org/2000/svg">
-<path d="M0.5 0H38.5V4H0.5V0ZM0.5 10H38.5V14H0.5V10ZM0.5 20H38.5V24H0.5V20Z"/>
-</svg>
-        {/* <img src={foto} alt="" /> */}
-      </div>
+    <div>
+     
+      <Navbar open={open} />
+      <MenuButton open={open} handleClick={handleClick} />
+  
       <div className="navbar__hijo ">
         <img src={logo} alt="" />
       </div>
@@ -29,6 +27,8 @@ export const Header = () => {
 </svg>
         {/* <img className=" hola" src={busqueda} alt="" /> */}
       </div>
-    </header>
+    </div>
   );
-};
+}
+
+export default Header;

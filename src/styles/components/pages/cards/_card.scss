@@ -1,0 +1,46 @@
+.container{ 
+    padding: 2rem 0 !important;
+   margin:  10px;
+}
+
+.container__row{
+  
+ display: flex;
+flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 20px;
+
+}
+
+.container_img{
+    width: 250px;
+    height: 250px;
+}
+
+//! animaciones
+.card:hover {
+    box-shadow: 5px 10px 20px 1px rgba(255, 255, 255, 0.273) !important;
+    transition: all 0.7s linear;
+  }
+  
+  .card-text {
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+  }
+  
+  .overflow {
+    overflow: hidden;
+  }
+  
+  .card-img-top {
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .card-img-top:hover {
+    transform: scale(1.8);
+  }
+
+

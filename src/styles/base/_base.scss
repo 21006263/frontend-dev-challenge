@@ -3,14 +3,12 @@
 
 html {
     box-sizing: border-box;
-    font-size: 16px;
-    scroll-behavior: smooth;
   }
   
   *,
   *::after,
   *::before {
-    box-sizing: inherit;
+    box-sizing:inherit;
   }
   
   body {
@@ -55,3 +53,10 @@ html {
   p {
     line-height: 1.6;
   }
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
